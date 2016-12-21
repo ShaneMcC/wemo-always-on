@@ -1,4 +1,3 @@
-#!/usr/bin/php
 <?php
 
 	$eventService = 'urn:Belkin:service:basicevent:1';
