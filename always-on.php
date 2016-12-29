@@ -33,7 +33,7 @@
 				if ($result == "Error") {
 					echo "\t", 'Device failed to turn on.', "\n";
 				} else {
-					echo "\t", 'Device is now on: ', $result, "\n";
+					echo "\t", 'Device is now on: ', (is_array($result) ? $result['BinaryState'] : $result), "\n";
 				}
 				deviceOnNotify($dev, $result);
 			}
