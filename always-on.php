@@ -8,7 +8,7 @@
 	}
 
 	foreach ($devices as $dev) {
-		if ($dev['data']['insightParams_state'] == 0) {
+		if (isset($dev['data']['insightParams_state']) && $dev['data']['insightParams_state'] == 0) {
 			echo 'Device is off: ', $dev['name'], "\n";
 
 			$matched = false;
